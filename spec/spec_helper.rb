@@ -4,10 +4,29 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.dirname(__FILE__) + "/../config/environment" unless defined?(RAILS_ROOT)
 require 'spec/autorun'
 require 'spec/rails'
+require "factory_girl"
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
+
+Factory.sequence :email do |n|
+  "somebody#{n}@example.com"
+end
+
+Factory.define :user do |f|
+  # These properties are set statically, and are evaluated when the factory is
+  # defined.
+  f.username "foo"
+  f.email { Factory.next(:email) }
+  f.password "foobar"
+  f.password_confirmation { |u| u.password }
+  # This property is set "lazily." The block will be called whenever an
+  # instance is generated, and the return value of the block is used as the
+  # value for the attribute.
+end
+
+
 
 Spec::Runner.configure do |config|
   # If you're not using ActiveRecord you should remove these
