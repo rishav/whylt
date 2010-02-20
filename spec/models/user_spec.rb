@@ -1,12 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe User do
-  before(:each) do
-    @user = Factory.build(:user, :username => '')
-    
-  end
+  
   it "should have an username" do
-    @user.should_not be_valid
+    user = Factory.build(:user, :username => '')
+    user.should_not be_valid
   end
 
   it "should have an email" do
