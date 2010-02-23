@@ -26,6 +26,12 @@ Factory.define :user do |f|
   # value for the attribute.
 end
 
+Factory.define :post do |p|
+  p.title "Title"
+  p.body "Test Post"
+  p.user {|user| user.association(:user,:username=>"writely")}
+
+end
 
 
 Spec::Runner.configure do |config|
