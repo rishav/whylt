@@ -1,0 +1,42 @@
+<% content_for :title do %>
+  <%= "Register " %>
+<% end %>
+
+
+  <div class="form-title">
+    Signup for WHYLT
+  </div>
+
+  <div class="form-elements">
+
+    <% form_for :user, :url=>users_path do |f|%>
+      <div class="element-set">
+        <div class="elem-label"> Email </div>
+        <div class="elem-field">
+          <%= f.text_field :email, :size=>20 %>        
+        </div>
+      </div>
+
+      <div class="element-set">
+        <div class="elem-label"> Password </div>
+        <div class="elem-field"> 
+          <%= f.password_field :password, :size=>20 %>
+        </div>
+      </div>
+
+      <div class="element-set">
+        <div class="elem-label"> Password Confirmation</div>
+        <div class="elem-field"> 
+          <%= f.password_field :password_confirmation, :size=>20 %>
+        </div>
+      </div>
+
+      </br>
+      </br>
+      <div class="element-set">
+        <%= submit_tag "Register", :class=>"submit-button" %>
+      </div>
+    <% end %>
+
+  </div> <!-- end form elements -->
+

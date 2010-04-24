@@ -1,0 +1,48 @@
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:100%;
+  line-height:1.125em;
+  background:  #EEEEEE none repeat scroll 0 0;
+  color: #0000CC;
+}
+
+.form-elements{
+  padding: 5px;
+  margin-top:5px;
+  padding-left:8px;
+  background: #D1E2F6 none repeat scroll 0 0;
+  border: 1px solid #000000;
+  width: 28%;
+  font-weight: bold;
+
+}
+
+.form-title{
+  background:#D1E2F6 none repeat scroll 0 0;
+  border:1px solid black;
+  border-top: 2px solid #000000;
+  color:#0000CC;
+  padding:5px;
+  text-align:center;
+  width:28%;
+  font-weight:bold;
+  color:#000000;
+}
+
+
+
+.elem-label{
+  float:left;
+  width: 130px;
+  padding-top: 8px;
+}
+
+.elem-field{
+  padding-top:8px;
+}
+
+
+.submit-button{
+  margin-left:130px;
+}

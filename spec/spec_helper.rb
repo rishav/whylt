@@ -1,38 +1,16 @@
 # This file is copied to ~/spec when you run 'ruby script/generate rspec'
 # from the project root directory.
 ENV["RAILS_ENV"] ||= 'test'
-require File.dirname(__FILE__) + "/../config/environment" unless defined?(RAILS_ROOT)
+require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
 require 'spec/autorun'
 require 'spec/rails'
-require "factory_girl"
+
+# Uncomment the next line to use webrat's matchers
+#require 'webrat/integrations/rspec-rails'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
-
-Factory.sequence :email do |n|
-  "somebody#{n}@example.com"
-end
-
-Factory.define :user do |f|
-  # These properties are set statically, and are evaluated when the factory is
-  # defined.
-  f.username "foo"
-  f.email { Factory.next(:email) }
-  f.password "foobar"
-  f.password_confirmation { |u| u.password }
-  # This property is set "lazily." The block will be called whenever an
-  # instance is generated, and the return value of the block is used as the
-  # value for the attribute.
-end
-
-Factory.define :post do |p|
-  p.title "Title"
-  p.body "Test Post"
-  p.user {|user| user.association(:user,:username=>"writely")}
-
-end
-
+Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
 
 Spec::Runner.configure do |config|
   # If you're not using ActiveRecord you should remove these
@@ -63,7 +41,7 @@ Spec::Runner.configure do |config|
   #
   # == Mock Framework
   #
-  # RSpec uses it's own mocking framework by default. If you prefer to
+  # RSpec uses its own mocking framework by default. If you prefer to
   # use mocha, flexmock or RR, uncomment the appropriate line:
   #
   # config.mock_with :mocha

@@ -1,35 +1,45 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
-describe User do
-  
-  it "should have an username" do
-    user = Factory.build(:user, :username => '')
-    user.should_not be_valid
+module UserSpecHelper
+  def valid_user_attributes
+    { 
+      :id => "1",
+      :username => "sid",
+      :email => "sid.ravichandran@gmail.com",
+      :password => "maryhadalittlelamb",
+      :password_confirmation => "maryhadalittlelamb"
+      
+    }
   end
 
-  it "should have an email" do
-    user = Factory.build(:user, :email => '')
-    user.should_not be_valid
+end
+
+
+describe User do 
+
+  include UserSpecHelper
+
+  before(:each) do 
+    @user = User.new
   end
 
-  it "should have a unique email id" do
-    user_1 = Factory.create(:user)
-    user_2 = Factory.build(:user,:email=>user_1.email)
-    user_2.should_not be_valid
+  it "should have email id" do
+   @user.attributes = valid_user_attributes.except(:email)
+   @user.should have(2).errors_on(:email) # presence constraint
   end
 
-  it "should have a unique username" do
-    user_1 = Factory.create(:user)
-    user_2 = Factory.build(:user,:username=>user_1.username)
-    user_2.should_not be_valid
-  end
+  it "should have a unique email_id" do   
+    @user.attributes = valid_user_attributes
+    @user.save
+    @user_2 = User.new
+    @user_2.attributes = valid_user_attributes.except([:username, :id])
+    @user_2.username = "sid2"
+    @user_2.id  = 2
+    @user_2.should have(1).error_on(:email) # uniqueness constraint
+  end  
 
-  it "should have proper email format" do
-    invalid_email_formats = ['xx@.com','xx.com','xx','xx@xx']
-    invalid_email_formats.each do |email|
-      user = Factory.build(:user, :email => email)
-      user.should_not be_valid
-    end
+  it "should be valid" do
+   @user.attributes = valid_user_attributes
+   @user.should be_valid 
   end
-  
 end
