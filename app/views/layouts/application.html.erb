@@ -15,6 +15,12 @@
       <div class="navigation">
       </div>
 
+      <% if flash[:notice] %>
+        <div class="flash-notice">
+          <%= flash[:notice] %>  
+        </div>
+      <% end %>
+
       <!-- Page Content -->
       <div class="content">
         <%= yield %>

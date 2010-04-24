@@ -5,12 +5,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = params[:user]
+    @user = User.new(params[:user]) 
     respond_to do |format|
       if @user.save
         flash[:notice] = "Your account was successfully created"
         format.html{ redirect_to user_url(@user) }
-      else        
+      else 
+        flash[:notice] = "#{@user.errors.full_messages}"       
         format.html{ render :action=> :new }
       end
     end

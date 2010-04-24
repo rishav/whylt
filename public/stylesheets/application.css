@@ -46,3 +46,18 @@ body{
 .submit-button{
   margin-left:130px;
 }
+
+.errors{
+  font-size:10px;
+  font-weight:normal;
+  color:red;
+}
+
+.flash-notice{
+  background: #4F9906 none repeat scroll 0 0;
+  font-weight: bold;
+  color: #FFFDD8;
+  width: 65%;
+  padding: 8px;
+  padding-left:100px;
+}

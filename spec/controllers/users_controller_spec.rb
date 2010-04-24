@@ -42,9 +42,8 @@ end
 
 describe UsersController, "handle POST /users" do
   before(:each) do
-    @user = mock_model(User, :save=>true)
+    @user = mock_model(User)
     @params = valid_user_attributes
-    @params[:id] = nil
   end
 
   def do_post
@@ -52,12 +51,22 @@ describe UsersController, "handle POST /users" do
   end
 
   it "should save the user object" do
+    User.should_receive(:new).and_return(@user)
+    @user.should_receive(:save).and_return(@user)
     do_post
-    @saved_user = User.new
-    @saved_user.attributes = valid_user_attributes
-    @user.should_receive(:save).and_return(@saved_user)
   end
 
-  it "should redirect the user to the show page" do 
+  it "should redirect the user to the show page" do
+    User.should_receive(:new).and_return(@user)
+    @user.should_receive(:save).and_return(true)
+    do_post
+    response.should redirect_to(user_url("#{@user.id}"))
+   end
+
+  it "should render the new user signup page /users/new when save fails" do
+    User.should_receive(:new).and_return(@user)
+    @user.should_receive(:save).and_return(false)
+    do_post
+    response.should render_template('new')
   end
 end

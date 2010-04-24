@@ -38,6 +38,12 @@ describe User do
     @user_2.should have(1).error_on(:email) # uniqueness constraint
   end  
 
+  it "should have two errors on username" do
+    @user.attributes = valid_user_attributes.except(:username)
+    @user.save
+    @user.should have(2).errors_on(:username)
+  end
+
   it "should be valid" do
    @user.attributes = valid_user_attributes
    @user.should be_valid 

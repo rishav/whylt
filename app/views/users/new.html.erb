@@ -1,5 +1,5 @@
 <% content_for :title do %>
-  <%= "Register " %>
+  <%= " Register " %>
 <% end %>
 
 
@@ -10,11 +10,21 @@
   <div class="form-elements">
 
     <% form_for :user, :url=>users_path do |f|%>
+
+      <div class="elemset">
+        <div class="elem-label"> Username </div>
+        <div class="elem-field">
+          <%= f.text_field :username, :size=>20 %>        
+        </div>
+        <div class="errors"><%= error_message_on :user, :username %> </div>
+      </div>
+
       <div class="element-set">
         <div class="elem-label"> Email </div>
         <div class="elem-field">
           <%= f.text_field :email, :size=>20 %>        
         </div>
+        <div class="errors"><%= error_message_on :user, :email %> </div>
       </div>
 
       <div class="element-set">
@@ -22,6 +32,7 @@
         <div class="elem-field"> 
           <%= f.password_field :password, :size=>20 %>
         </div>
+        <div class="errors"><%= error_message_on :user, :password %> </div>
       </div>
 
       <div class="element-set">
