@@ -60,4 +60,8 @@ body{
   width: 65%;
   padding: 8px;
   padding-left:100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #FFFDD8;
+
 }

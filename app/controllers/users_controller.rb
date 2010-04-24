@@ -11,7 +11,6 @@ class UsersController < ApplicationController
         flash[:notice] = "Your account was successfully created"
         format.html{ redirect_to user_url(@user) }
       else 
-        flash[:notice] = "#{@user.errors.full_messages}"       
         format.html{ render :action=> :new }
       end
     end
