@@ -11,6 +11,13 @@ module UsersDetailsHelper
 
     }
   end
+
+  def activation_information
+    {
+      :token => "123456789"
+    }
+  end
+
 end
 
 include UsersDetailsHelper
@@ -43,7 +50,7 @@ end
 describe UsersController, "handle POST /users" do
   before(:each) do
     @user = mock_model(User)
-    User.stub!(:new).and_return(@user)
+    #User.stub!(:new).and_return(@user)
     @params = valid_user_attributes
   end
 
@@ -79,3 +86,33 @@ describe UsersController, "handle POST /users" do
   end
 
 end
+
+describe UsersController, "handle GET /users/activate_account/:id" do
+  include UsersDetailsHelper
+ 
+  before(:each) do
+    @user = mock_model(User, :save=>true)
+    User.stub!(:find_by_perishable_token).with("123456789").and_return(@user)
+    @params = activation_information
+  end
+
+  def do_get
+    get :activate_account, :token=>"123456789"    
+  end
+
+  it "should find the user based on the activation token" do
+    @user.should_receive(:find_by_perishable_token).with(:token=>"123456789").and_return(@user)
+    do_get
+    assigns[:user][:activated_at].should eql(DateTime.now)
+  end
+
+  it "should set the activated_at field to the current_time" do 
+  end
+
+  it "should display a success message on success of finding a user" do
+  end
+
+  it "should render error page on not finding the user based on the perishable token " do
+  end
+end
+

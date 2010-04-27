@@ -15,4 +15,15 @@ class UsersController < ApplicationController
       end
     end
   end
+
+  def activate_account
+    @user = User.find_by_perishable_token(params[:token])
+    unless @user.nil?
+      @user.activated_at = DateTime.now
+      flash[:notice]= "Your account has been activated"
+      redirect_to user_url(@user)
+    else
+      render :template=>"users/activation_link_failure"
+    end  
+  end
 end
