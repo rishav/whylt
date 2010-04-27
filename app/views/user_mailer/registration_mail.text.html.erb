@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </title>
+    <%= stylesheet_link_tag "mail" %>
+  </head>
+
+  <body>
+    <div class="mail-header">
+      WHYLT
+    </div>
+    <div class="mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To activate your account on WHYLT.com </p>
+      <p> <%= activate_account_url(user.perishable_token) %> </p>
+    </div>
+  </body>
+</html>
