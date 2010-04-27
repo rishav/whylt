@@ -1,31 +1,33 @@
 
 body{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:100%;
+  font-family:Georgia,serif;
+  font-size:14px;
   line-height:1.125em;
-  background:  #EEEEEE none repeat scroll 0 0;
+  background:  #294757 none repeat scroll 0 0;
   color: #0000CC;
+}
+
+.content{
+  width: 95%;
 }
 
 .form-elements{
   padding: 5px;
-  margin-top:5px;
   padding-left:8px;
-  background: #D1E2F6 none repeat scroll 0 0;
+  background: #FFFFFF none repeat scroll 0 0;
   border: 1px solid #000000;
-  width: 28%;
   font-weight: bold;
 
 }
 
 .form-title{
-  background:#D1E2F6 none repeat scroll 0 0;
+  background:#FFFFFF none repeat scroll 0 0;
   border:1px solid black;
   border-top: 2px solid #000000;
   color:#0000CC;
   padding:5px;
   text-align:center;
-  width:28%;
+  width:95%;
   font-weight:bold;
   color:#000000;
 }
@@ -44,7 +46,7 @@ body{
 
 
 .submit-button{
-  margin-left:130px;
+  
 }
 
 .errors{
@@ -64,4 +66,9 @@ body{
   margin-bottom: 10px;
   border: 3px solid #FFFDD8;
 
+}
+
+.registration-form{
+  width:40%;
+  margin-left:150px;;
 }
