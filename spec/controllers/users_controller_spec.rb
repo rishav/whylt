@@ -88,22 +88,23 @@ describe UsersController, "handle POST /users" do
 end
 
 describe UsersController, "handle GET /users/activate_account/:id" do
+  integrate_views
   include UsersDetailsHelper
  
   before(:each) do
-    @user = mock_model(User, :save=>true)
-    User.stub!(:find_by_perishable_token).with("123456789").and_return(@user)
-    @params = activation_information
+  #  @user = mock_model(User, :save=>true, :activated_at =>"123456789")
+  #  @params = activation_information
+  #  User.stub!(:find_by_perishable_token).and_return(@user)    
+  #  @user.stub!(:activated_at).and_return("123456789")
+     @user = mock_model(User, :save=>true, :activated_at =>"12345678")
+     @params = activation_information
+     @user.stub!(:activated_at=)
   end
 
-  def do_get
-    get :activate_account, :token=>"123456789"    
-  end
-
-  it "should find the user based on the activation token" do
-    @user.should_receive(:find_by_perishable_token).with(:token=>"123456789").and_return(@user)
-    do_get
-    assigns[:user][:activated_at].should eql(DateTime.now)
+  it "should find the user based on the activation token and activate the user" do
+    User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(@user)     
+    get :activate_account, :token=>"123456789"
+    @user.activated_at.should eql("12345678")
   end
 
   it "should set the activated_at field to the current_time" do 
