@@ -68,7 +68,7 @@ describe UsersController, "handle POST /users" do
     User.should_receive(:new).and_return(@user)
     @user.should_receive(:save).and_return(true)
     do_post
-    response.should redirect_to(user_url("#{@user.id}"))
+    response.should render_template("users/signup_success")
    end
 
   it "should redirect the user to the show page after a successful account creation with a flash message" do
@@ -107,13 +107,18 @@ describe UsersController, "handle GET /users/activate_account/:id" do
     @user.activated_at.should eql("12345678")
   end
 
-  it "should set the activated_at field to the current_time" do 
+  it "should redirect to (user/show) user show page on success" do
+   User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(@user)
+   get :activate_account, :token=>"123456789"
+   flash[:notice].should eql("Your account has been activated")
+   response.should redirect_to user_url(@user.id)
   end
 
-  it "should display a success message on success of finding a user" do
+  it "should redirect to users/new page on failure" do
+    User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(nil)
+    get :activate_account, :token=>"123456789"
+    response.should render_template("users/activation_link_failure")
   end
 
-  it "should render error page on not finding the user based on the perishable token " do
-  end
 end
 

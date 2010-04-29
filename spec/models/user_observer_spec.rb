@@ -4,31 +4,28 @@ module UserSpecHelper
   def valid_user_attributes
     { 
         :id => "1",
-        :username => "sid",                                                                                                    
+        :username => "sid",
         :email => "sid.ravichandran@gmail.com",
         :password => "maryhadalittlelamb",
-        :password_confirmation => "maryhadalittlelamb"                                                                         
+        :password_confirmation => "maryhadalittlelamb",
     }
 
   end
 end
 
 
-describe UserObserver do
+describe UserObserver, "after_save" do
   include UserSpecHelper
 
   before(:each) do
-    @user = User.new
-    @user.attributes = valid_user_attributes
+    @user = mock_model(User, valid_user_attributes)
     @params = valid_user_attributes
-  end
-
-  def do_save
-    post :create, :user=>@params
+    UserMailer.stub!(:deliver_registration_mail).with(@user).and_return(true)
+    @user_observer = UserObserver.instance
   end
 
   it "should send an invitation email to the registered user on save with the persistence token" do
-    @user.should_receive(:deliver_registration_mail).and_return(true)
-    do_save
+    UserMailer.should_receive(:deliver_registration_mail).with(@user).and_return(true)
+    @user_observer.after_save(@user)
   end
 end

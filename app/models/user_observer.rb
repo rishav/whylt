@@ -1,5 +1,5 @@
 class UserObserver < ActiveRecord::Observer
   def after_save(user)
-    user.deliver_registration_mail(self)
+    UserMailer.deliver_registration_mail(user)
   end
 end

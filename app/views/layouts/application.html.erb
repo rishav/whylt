@@ -1,37 +1,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-      <title> <%=h  yield(:title) || controller.action_name %> </title>
-      <%= stylesheet_link_tag "application" %>
-   </head>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title> <%=h  yield(:title) || controller.action_name %> </title>
+    <%= stylesheet_link_tag "application" %>
+  </head>
 
-   <body>
-
-      <!-- Default logo banner -- >
-      <div class="header">
+  <body>
+    <div class="content-title">
+      <div class="logo">
+        <b>WHYLT</b>
       </div>
-
-      <!-- Site Navigation -->
-      <div class="navigation">
+      <div class="login-status"> 
+        <% if current_user.nil? %>
+          <%= render :partial=>"user_sessions/new", :locals=>{:user_sessions=>UserSession.new} %>
+        <% else %>
+          <%= "Hi #{current_user.username}" %> | <%= link_to "Logout", logout_url %> 
+        <% end %>
       </div>
+    </div>
 
-      <% if flash[:notice] %>
-        <div class="flash-notice">
-          <%= flash[:notice] %>  
-        </div>
-      <% end %>
-
-      <!-- Page Content -->
-      <div class="content">
-          <%= yield %>
+    <% if flash[:notice] %>
+      <div class="flash-notice">
+        <%= flash[:notice] %>
       </div>
+    <% end %>
 
-      <!-- Footer and Other Details -->
-      <div class="footer"> </div>
 
-      <div class="content-for-js">
-          <%= yield(:js) %>
-      </div> 
+   <!-- Page Content -->
+    <div class="content">
+      <%= yield %>
+    </div>
 
-    </body>
+    <!-- Footer and Other Details -->
+    <div class="footer">
+    </div>
+
+  </body>
 </html>
