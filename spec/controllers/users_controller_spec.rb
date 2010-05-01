@@ -102,13 +102,15 @@ describe UsersController, "handle GET /users/activate_account/:id" do
   end
 
   it "should find the user based on the activation token and activate the user" do
-    User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(@user)     
+    User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(@user)
+    @user.should_receive(:reset_perishable_token)
     get :activate_account, :token=>"123456789"
     @user.activated_at.should eql("12345678")
   end
 
   it "should redirect to (user/show) user show page on success" do
    User.should_receive(:find_by_perishable_token).with(@params[:token]).and_return(@user)
+   @user.should_receive(:reset_perishable_token)
    get :activate_account, :token=>"123456789"
    flash[:notice].should eql("Your account has been activated")
    response.should redirect_to user_url(@user.id)

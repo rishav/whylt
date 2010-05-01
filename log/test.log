@@ -15604,3 +15604,1563 @@ WARNING: Can't mass-assign these protected attributes: id
   [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
   [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing WelcomeController#index (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/welcome]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password"}}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password123"}}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password123&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#index (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+  Parameters: {"token"=>"123456789"}
+Rendering template within layouts/application
+Rendering users/activation_link_failure
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:12:50) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:12:50) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '78e35e75c4daaf87b91098adde3e93b2221167e59eaf82c376c8877fee2c893e764afd37283e4955b5f593b0f26b62fbe0a9447b2cd68cfa76ef277cdec34780') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '80b8b3fee4799e31a288a6df953a7ee381b5dc26dc2f82783093442e5020ad3b5bf767bb6d3dc9a6bd3cce808559a598b94875a7e36061b410aaeac917556b4b') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES(NULL, '2010-05-01 09:42:50', 'b7faee8642bad9bdf0d76840d926d76f2a0cc7c43b86ccac70ed15b9cba913f3a266e831175d595df57961b227d59079aa4e118def348fc55f7ad03ee780d870', 'YiiSgoCyGZRU39A7xVpE', '2010-05-01 09:42:50', 'sid', 'HXLm3W4qLEk9YCHfXwun', '80b8b3fee4799e31a288a6df953a7ee381b5dc26dc2f82783093442e5020ad3b5bf767bb6d3dc9a6bd3cce808559a598b94875a7e36061b410aaeac917556b4b', 'sid.ravichandran@gmail.com')[0m
+Sent mail to sid.ravichandran@gmail.com
+
+Date: Sat, 1 May 2010 09:42:50 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: sid.ravichandran@gmail.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf79ab9898_76b4..fdba2a8d619b
+
+
+--mimepart_4bdbf79ab9898_76b4..fdba2a8d619b
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/YiiSgoCyGZRU39A7xVpE </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf79ab9898_76b4..fdba2a8d619b--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid2') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '9e3a0fccaeb5712bf4779e5d5078a2e0e8dc1ff23e72add8539972bb05d34b12d8146c732a76ecf647cf391c78c574e31acde1f91a2bf091a15d26b97b5f0a87') LIMIT 1[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '91910060c645fa108c5e330baa48a71742b3c0ef4e0185a6b034feabcf8a317bbc279e0c1f8a0b4ee33b7568c9beb157ceb224cd2d8e7021b0fd49f7d6cdb09b') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '91910060c645fa108c5e330baa48a71742b3c0ef4e0185a6b034feabcf8a317bbc279e0c1f8a0b4ee33b7568c9beb157ceb224cd2d8e7021b0fd49f7d6cdb09b') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'dfb325d406a1a15d1e99960820ff9006cbe7d6c10c4a4b6d225cc8a2169ed66978827b24c0fec028455140f62ce4f857e1e45bff5c14a4ef9a14ba3f8b5c6985') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody1@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '806b86b1aa74fb2ee45d0b3c1dde5903658997b47294b7f16b2efbc88fe1307039bfba6eb844d892e313b5e7a37553701efd81d0f0724ab554a253f5e0c8f067') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '80b8b3fee4799e31a288a6df953a7ee381b5dc26dc2f82783093442e5020ad3b5bf767bb6d3dc9a6bd3cce808559a598b94875a7e36061b410aaeac917556b4b') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '80b8b3fee4799e31a288a6df953a7ee381b5dc26dc2f82783093442e5020ad3b5bf767bb6d3dc9a6bd3cce808559a598b94875a7e36061b410aaeac917556b4b') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:42:50', '2010-05-01 09:42:50', '7bc818de42a6a18173cb0cfc1ff3410eb5150b5c15a6494e0205aad5c730ca6f430357458cd3284c01efc51d7cd9a947aee8165c981d41d19cd718250268e70f', 'NFs52N0tWxCJw6MtYdP-', '2010-05-01 09:42:50', 'somebody1', 'tHTfBwzzj3H8XiNPSew1', '806b86b1aa74fb2ee45d0b3c1dde5903658997b47294b7f16b2efbc88fe1307039bfba6eb844d892e313b5e7a37553701efd81d0f0724ab554a253f5e0c8f067', 'somebody1@example.com')[0m
+Sent mail to somebody1@example.com
+
+Date: Sat, 1 May 2010 09:42:50 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody1@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf79ac8d46_76b4..fdba2a8d62aa
+
+
+--mimepart_4bdbf79ac8d46_76b4..fdba2a8d62aa
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/NFs52N0tWxCJw6MtYdP- </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf79ac8d46_76b4..fdba2a8d62aa--
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody2@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody2') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '1362d85420c0901e65f034f856c10cb3153b61fe217440dea580e37833171d556953d7367bbdc59555d27709ec4fb525d544fbf8337dd083919c6098cbf68d5a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '806b86b1aa74fb2ee45d0b3c1dde5903658997b47294b7f16b2efbc88fe1307039bfba6eb844d892e313b5e7a37553701efd81d0f0724ab554a253f5e0c8f067') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '806b86b1aa74fb2ee45d0b3c1dde5903658997b47294b7f16b2efbc88fe1307039bfba6eb844d892e313b5e7a37553701efd81d0f0724ab554a253f5e0c8f067') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:42:50', '2010-05-01 09:42:50', 'd74ef0a5185129dbb60da307fb54e1e2d89b2e2008db72d60948cdf19294a8adfec6ecf438bb8ab61fbcdd6ea050612012b2a5ffefeee9cc1dc98ebc3ce80c85', 'NbOkOgxb8JP3Nd8UDcjb', '2010-05-01 09:42:50', 'somebody2', 'Pudiy9IzXEUvWaUOwi5f', '1362d85420c0901e65f034f856c10cb3153b61fe217440dea580e37833171d556953d7367bbdc59555d27709ec4fb525d544fbf8337dd083919c6098cbf68d5a', 'somebody2@example.com')[0m
+Sent mail to somebody2@example.com
+
+Date: Sat, 1 May 2010 09:42:50 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody2@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf79ad00e1_76b4..fdba2a8d6396
+
+
+--mimepart_4bdbf79ad00e1_76b4..fdba2a8d6396
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/NbOkOgxb8JP3Nd8UDcjb </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf79ad00e1_76b4..fdba2a8d6396--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing WelcomeController#index (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/welcome]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password"}}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password123"}}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password123&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#index (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+  Parameters: {"token"=>"123456789"}
+Rendering template within layouts/application
+Rendering users/activation_link_failure
+Rendered user_sessions/_new (10.5ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:14:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:14:56) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '0f6a6d3eb4d20cde4bcef0f027cba049f3f4ba09ed85ebc4a39ff9d3cd1f686cb8afe0c5fd6c58f34bec8f6099aea2dfcafc7c06fe67431baaa49a72250ba82b') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd90eb5fa24cfa064cfd9210f16ba54c2f251890acd339469acee285376bc9b0717d43a1abc40c150d5e791fadd3e09020e0ad0c04f1d784687b89ef84d6193f4') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES(NULL, '2010-05-01 09:44:56', 'd5bac249b9f9b0a5ef8a19e15b01b576ae2d4421583245a204bbc0981e784bddd56a28f20e8ca15c3ce45e289b7cbcc701661bf2bd64ccd7b98ce044f7a1c480', 'x0OGZmWLaI2OsiQxmRH9', '2010-05-01 09:44:56', 'sid', 'zhprBQEDD_C4nS3vbX-f', 'd90eb5fa24cfa064cfd9210f16ba54c2f251890acd339469acee285376bc9b0717d43a1abc40c150d5e791fadd3e09020e0ad0c04f1d784687b89ef84d6193f4', 'sid.ravichandran@gmail.com')[0m
+Sent mail to sid.ravichandran@gmail.com
+
+Date: Sat, 1 May 2010 09:44:56 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: sid.ravichandran@gmail.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf818ded88_770c..fdbac30d611d
+
+
+--mimepart_4bdbf818ded88_770c..fdbac30d611d
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/x0OGZmWLaI2OsiQxmRH9 </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf818ded88_770c..fdbac30d611d--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid2') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'ca095b704c4ce782168a7a426b6d051bfa2146472197cb54e6ff8727f90d3c5dd3d68c8316e249441c48ee474d20b9cf96bd74309e14086299ed5df7ade20044') LIMIT 1[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '8a9fc71f19dc91143825d0832d1782121db63166357d96785a8ccd9b6884b6fb9bf5263eea38a548deb8a72a66453718ddbdf3f2307acd2060a114513c54c0b4') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '8a9fc71f19dc91143825d0832d1782121db63166357d96785a8ccd9b6884b6fb9bf5263eea38a548deb8a72a66453718ddbdf3f2307acd2060a114513c54c0b4') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'b0cb969096cbb07f5a1ae2f6fbd9892e9e9d84acb672ae2f39224d7365fd21040fd83a8aae95cb15fe77f544e07e59cc748d82da0d19fccc6c9e0f7bc79adc7a') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody1@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd92e09209241c9884de82a0dc608905fff1b726288fc1a0bbb624a9ca5bf08ab8b748d52bc08be7d5510143e6c789fbfaa5d897c2bbcb3443bd391f50774ab99') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'd90eb5fa24cfa064cfd9210f16ba54c2f251890acd339469acee285376bc9b0717d43a1abc40c150d5e791fadd3e09020e0ad0c04f1d784687b89ef84d6193f4') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'd90eb5fa24cfa064cfd9210f16ba54c2f251890acd339469acee285376bc9b0717d43a1abc40c150d5e791fadd3e09020e0ad0c04f1d784687b89ef84d6193f4') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:44:56', '2010-05-01 09:44:56', 'b8e933dcaad6a8b1e7af4a9ea0dd4ee9cddbed2928a92223e8a24e27c1fdbadda2d8f7a5c17320e55001f6b5c8fe13ecd3fd73429529331986fba5d8e2b5d21d', 'i49JVJl_BJsAPJw7cdaQ', '2010-05-01 09:44:56', 'somebody1', 'I99cfZycgc67Qrbrzocg', 'd92e09209241c9884de82a0dc608905fff1b726288fc1a0bbb624a9ca5bf08ab8b748d52bc08be7d5510143e6c789fbfaa5d897c2bbcb3443bd391f50774ab99', 'somebody1@example.com')[0m
+Sent mail to somebody1@example.com
+
+Date: Sat, 1 May 2010 09:44:56 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody1@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf818ecbfe_770c..fdbac30d627a
+
+
+--mimepart_4bdbf818ecbfe_770c..fdbac30d627a
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/i49JVJl_BJsAPJw7cdaQ </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf818ecbfe_770c..fdbac30d627a--
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody2@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody2') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'abb0aa86866809607a6be938c29012791a3ccfc99a096ddd086dea92b2a73d71e2e28b205d4a3fefb7099f64f677a62ceeed627a9632004df1db1bdc7b239e9b') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'd92e09209241c9884de82a0dc608905fff1b726288fc1a0bbb624a9ca5bf08ab8b748d52bc08be7d5510143e6c789fbfaa5d897c2bbcb3443bd391f50774ab99') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'd92e09209241c9884de82a0dc608905fff1b726288fc1a0bbb624a9ca5bf08ab8b748d52bc08be7d5510143e6c789fbfaa5d897c2bbcb3443bd391f50774ab99') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:44:56', '2010-05-01 09:44:56', 'b313a7f4b4c29b1180473925719af0422418dd80ada96d468b58f81073f546cc21c37bc54b670a2d06738359565a2d77d3acf36d8d5f811521729cdf43bcc2c6', 'tRsxwCy3NT8byMuNvQw-', '2010-05-01 09:44:56', 'somebody2', 'guFwrQfc3O3rX_K5PxxQ', 'abb0aa86866809607a6be938c29012791a3ccfc99a096ddd086dea92b2a73d71e2e28b205d4a3fefb7099f64f677a62ceeed627a9632004df1db1bdc7b239e9b', 'somebody2@example.com')[0m
+Sent mail to somebody2@example.com
+
+Date: Sat, 1 May 2010 09:44:56 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody2@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf818f3411_770c..fdbac30d63b2
+
+
+--mimepart_4bdbf818f3411_770c..fdbac30d63b2
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/tRsxwCy3NT8byMuNvQw- </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf818f3411_770c..fdbac30d63b2--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing WelcomeController#index (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/welcome]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password"}}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password123"}}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password123&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#index (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody1@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody1') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '628ed0546c1de3f7cdcab7cdb1cf02d185572cd73fb24464e14ce19af525f6b08ab247dadbdd9e434f519a52dc95df3e2370ffb1c78fc72b5c830ffd0d14f738') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:46:12', '2010-05-01 09:46:12', 'c25c42582aea10811ced0dc36163896d4d47c74a5112b626420f6bd9bfcba4acff632cf4bdcba2e4cb6e5c4ff8771b80d2ec1a63ebfe54807d77b0c8cb1cd97c', 't-AOhxz3j3-4vnrkgCLg', '2010-05-01 09:46:12', 'somebody1', 'RxBFuzKKGtn7TUkfLkSZ', '628ed0546c1de3f7cdcab7cdb1cf02d185572cd73fb24464e14ce19af525f6b08ab247dadbdd9e434f519a52dc95df3e2370ffb1c78fc72b5c830ffd0d14f738', 'somebody1@example.com')[0m
+Sent mail to somebody1@example.com
+
+Date: Sat, 1 May 2010 09:46:12 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody1@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf864954e8_773c..fdba0c8d6132
+
+
+--mimepart_4bdbf864954e8_773c..fdba0c8d6132
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/t-AOhxz3j3-4vnrkgCLg </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf864954e8_773c..fdba0c8d6132--
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody2@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody2') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'e7dd2f25499ef4daa15daf8c91aece46da0bdd81cacfc901263961a4c0ffbed550bc9cb9acc38000369dc0ee28ca561df74a7ad09ec2e7863b493db282639519') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '628ed0546c1de3f7cdcab7cdb1cf02d185572cd73fb24464e14ce19af525f6b08ab247dadbdd9e434f519a52dc95df3e2370ffb1c78fc72b5c830ffd0d14f738') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '628ed0546c1de3f7cdcab7cdb1cf02d185572cd73fb24464e14ce19af525f6b08ab247dadbdd9e434f519a52dc95df3e2370ffb1c78fc72b5c830ffd0d14f738') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:46:12', '2010-05-01 09:46:12', 'e4b137a9f732c726cd28c68fba7d3f78f9507ebbe161fa6fe77f6a0e17a52db08dd4cd6401401133a75429cdef74a03d7a37ba33ef4e891dd9f3d7d9e227b7c3', 'QKF0JvD5mZ9LhmGNW0Du', '2010-05-01 09:46:12', 'somebody2', 'v74k7oaJFtuwdY8VnvDV', 'e7dd2f25499ef4daa15daf8c91aece46da0bdd81cacfc901263961a4c0ffbed550bc9cb9acc38000369dc0ee28ca561df74a7ad09ec2e7863b493db282639519', 'somebody2@example.com')[0m
+Sent mail to somebody2@example.com
+
+Date: Sat, 1 May 2010 09:46:12 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody2@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf8649d7ce_773c..fdba0c8d6221
+
+
+--mimepart_4bdbf8649d7ce_773c..fdba0c8d6221
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/QKF0JvD5mZ9LhmGNW0Du </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf8649d7ce_773c..fdba0c8d6221--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (13.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '5515dbe766c44e7409174e0b9383744d1becc3c3c1f78832704fcca442a7ced447bddd82c25a3305a5759ec38ba6c90a18ccb2328e18ff0ca50cd0e98640be24') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '8d6977963d70f98e52a3b5bd90edd39972cdfee90f1917ca389be0db72b33e908f83fb344b99b403b170a136a319d478665f84fc1f1e1b642ab0674ed7061df8') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'e7dd2f25499ef4daa15daf8c91aece46da0bdd81cacfc901263961a4c0ffbed550bc9cb9acc38000369dc0ee28ca561df74a7ad09ec2e7863b493db282639519') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'e7dd2f25499ef4daa15daf8c91aece46da0bdd81cacfc901263961a4c0ffbed550bc9cb9acc38000369dc0ee28ca561df74a7ad09ec2e7863b493db282639519') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES(NULL, '2010-05-01 09:46:12', '576baca066a7805a0780199e30dde06a20f0070530761f09122ed8306cb01592bf79f7a0b76678e80e6c13e2ac19a2e4681960fc051ece0e3d38d7d21e85e537', 'dxeZHxixrm7X3oNtxlpm', '2010-05-01 09:46:12', 'sid', 'iosOKXTtCtGZiOZR2_Xc', '8d6977963d70f98e52a3b5bd90edd39972cdfee90f1917ca389be0db72b33e908f83fb344b99b403b170a136a319d478665f84fc1f1e1b642ab0674ed7061df8', 'sid.ravichandran@gmail.com')[0m
+Sent mail to sid.ravichandran@gmail.com
+
+Date: Sat, 1 May 2010 09:46:12 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: sid.ravichandran@gmail.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf864a9ddf_773c..fdba0c8d6397
+
+
+--mimepart_4bdbf864a9ddf_773c..fdba0c8d6397
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/dxeZHxixrm7X3oNtxlpm </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf864a9ddf_773c..fdba0c8d6397--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid2') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'da67008a23ed2bad8f9dbf9a9f4c847fb79d86e37f538cec1eb0ca14cda2ddfb635af020adb34d0a3877db04062f3079bee40d43bff33c021c5b43cdd43b4cf5') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (4.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '36fa97574a966b45c7a58550d9514dcdaaaca2c8f01e237c41612d54ef9147cf3dd94e7dd06e6213ec38281f6dc8d9123abda42fa11609e6a3fdaeaf49829f48') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '36fa97574a966b45c7a58550d9514dcdaaaca2c8f01e237c41612d54ef9147cf3dd94e7dd06e6213ec38281f6dc8d9123abda42fa11609e6a3fdaeaf49829f48') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'f0605c4f47570496116715de8fcb3b90ce626c9a822a82f9873b3c4b6a2cd455df52ac61ba9a848eed566a1a01a10a778b457f23558bddc755c9b41b9f77aaf6') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+  Parameters: {"token"=>"123456789"}
+Rendering template within layouts/application
+Rendering users/activation_link_failure
+Rendered user_sessions/_new (3.9ms)
+Completed in 8ms (View: 8, DB: 29) | 200 OK [http://test.host/activate_account/123456789]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:12) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:16:12) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing WelcomeController#index (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/welcome]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password"}}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password123"}}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password123&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#index (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody1@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody1') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '9f89fb3875883d9c99e57f287562ac3d8461248c2dee5865a1fefc82e1267b2073fb559e7d1d2c5f284589866f5ee530160bdf5fdf063b00eaf77c76b830e6d8') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:46:43', '2010-05-01 09:46:43', 'd58a0705741f36dbe51fb78d58ca126fcf3f5bc38345a6ff97fd4ba90983904481c157e64f7afdc28badb1ca5ef594eda466d19b2bba9eff9f40f0d7114e2ca2', 'PBjpJ3ETXyarQacD3Alf', '2010-05-01 09:46:43', 'somebody1', 'cWe30l9ggzYpNROTE8qj', '9f89fb3875883d9c99e57f287562ac3d8461248c2dee5865a1fefc82e1267b2073fb559e7d1d2c5f284589866f5ee530160bdf5fdf063b00eaf77c76b830e6d8', 'somebody1@example.com')[0m
+Sent mail to somebody1@example.com
+
+Date: Sat, 1 May 2010 09:46:43 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody1@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf8839e545_7753..fdbb000da1fb
+
+
+--mimepart_4bdbf8839e545_7753..fdbb000da1fb
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/PBjpJ3ETXyarQacD3Alf </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf8839e545_7753..fdbb000da1fb--
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody2@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody2') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'ab8bb53eec120f3b4e7c92214199e166837630905a41e128468003eb393c61f45a32c0988a6e2f78defb8e350a4b8c57ed7996a3c6c7fd4d795571db1c824c4b') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '9f89fb3875883d9c99e57f287562ac3d8461248c2dee5865a1fefc82e1267b2073fb559e7d1d2c5f284589866f5ee530160bdf5fdf063b00eaf77c76b830e6d8') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '9f89fb3875883d9c99e57f287562ac3d8461248c2dee5865a1fefc82e1267b2073fb559e7d1d2c5f284589866f5ee530160bdf5fdf063b00eaf77c76b830e6d8') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:46:43', '2010-05-01 09:46:43', '98dbae4f425a202eb528fad3eeea9e42c04c1d61a8e1ee4006750722de46fe83bffaf2c2dd71319168665c947bb75ba066a526c18becbfabf86b6835733abbd2', 'VJoTpN9GBsT0WfWtw6DR', '2010-05-01 09:46:43', 'somebody2', '3SY2Lps5ENOTU5xDfvOw', 'ab8bb53eec120f3b4e7c92214199e166837630905a41e128468003eb393c61f45a32c0988a6e2f78defb8e350a4b8c57ed7996a3c6c7fd4d795571db1c824c4b', 'somebody2@example.com')[0m
+Sent mail to somebody2@example.com
+
+Date: Sat, 1 May 2010 09:46:43 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody2@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf883a6842_7753..fdbb000da285
+
+
+--mimepart_4bdbf883a6842_7753..fdbb000da285
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/VJoTpN9GBsT0WfWtw6DR </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf883a6842_7753..fdbb000da285--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '09a503db6ac0b95080d5dfa6ec5096609215fb573216271ca4302e915e6139dd2fccee3337822fe6e545409e5007172779f24aefffa33837cf04a76672598be3') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '5ad298b5829c04ecdbf7085b718ce07d9e25d78dd44f7b537f03d660e4ed7ce4ba8148c1ad331b67258948a56b8985ed6db9ba9d621519e201d77fba2c854a92') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'ab8bb53eec120f3b4e7c92214199e166837630905a41e128468003eb393c61f45a32c0988a6e2f78defb8e350a4b8c57ed7996a3c6c7fd4d795571db1c824c4b') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'ab8bb53eec120f3b4e7c92214199e166837630905a41e128468003eb393c61f45a32c0988a6e2f78defb8e350a4b8c57ed7996a3c6c7fd4d795571db1c824c4b') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES(NULL, '2010-05-01 09:46:43', '026b3a09b612aa051392989a1d96f8c9ea61c4108e72e5b1c62ea678b3e1cbb5dba2f8fc945f293fc7fda388582985130d8cda4d261695c058ef469b8610eee1', '2biXA9YhbgGQWMy_6lGQ', '2010-05-01 09:46:43', 'sid', '4z-UQhUWDeHXoVNs8sG-', '5ad298b5829c04ecdbf7085b718ce07d9e25d78dd44f7b537f03d660e4ed7ce4ba8148c1ad331b67258948a56b8985ed6db9ba9d621519e201d77fba2c854a92', 'sid.ravichandran@gmail.com')[0m
+Sent mail to sid.ravichandran@gmail.com
+
+Date: Sat, 1 May 2010 09:46:43 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: sid.ravichandran@gmail.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf883af523_7753..fdbb000da379
+
+
+--mimepart_4bdbf883af523_7753..fdbb000da379
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/2biXA9YhbgGQWMy_6lGQ </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf883af523_7753..fdbb000da379--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid2') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd8bc21657e9da5784571826dd3804647156b7d72373e7caffad3b9b2070e196f782de671dcbfe281bdf4b2996079456a9ec548ca8458b83f88bb62f2f8cda214') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '98962283e11cf4a617979f0519a57f62d82dbefa59187cec5dc0bbed60575dcab110648d57fd3c528b11b1d4868ff521073b090b5e34291391d5d686f7f4de21') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '98962283e11cf4a617979f0519a57f62d82dbefa59187cec5dc0bbed60575dcab110648d57fd3c528b11b1d4868ff521073b090b5e34291391d5d686f7f4de21') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '073e3b64086df740cf0a1732e874020df79d9e3e9be96e0a373627d2710a02963adb296d2a6e017df1c64d5ef064e9f2a368fafbb55e9b2acac61be1ca1c261e') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+  Parameters: {"token"=>"123456789"}
+Redirected to http://test.host/users/1005
+Completed in 4ms (DB: 12) | 302 Found [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+  Parameters: {"token"=>"123456789"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+  Parameters: {"token"=>"123456789"}
+Rendering template within layouts/application
+Rendering users/activation_link_failure
+Rendered user_sessions/_new (3.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:16:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:16:43) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing WelcomeController#index (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/welcome]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password"}}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user_session"=>{"username"=>"test", "password"=>"password123"}}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions?user_session%5Bpassword%5D=password123&user_session%5Busername%5D=test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#index (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody1@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '27f4bf8df95c1883ac7ef289ec8f8c25be9f827f9be754104b9906bf086ee0c925ce2a74a577465e45bfe746d6fef956d130a9217111e4bec0f54a6c3f09f39d') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:47:06', '2010-05-01 09:47:06', '35c8020ccac73e0d82fca078e461f0914b20aefb8b4fc43789a7e0458b681c9d221001057845e3c929f58825e473c5627690cb44d8f1b6c4891082857dc295fb', 'LlP2mK3slzMFk__y17c-', '2010-05-01 09:47:06', 'somebody1', '9GlqlGMGj3dtzGMSIgIT', '27f4bf8df95c1883ac7ef289ec8f8c25be9f827f9be754104b9906bf086ee0c925ce2a74a577465e45bfe746d6fef956d130a9217111e4bec0f54a6c3f09f39d', 'somebody1@example.com')[0m
+Sent mail to somebody1@example.com
+
+Date: Sat, 1 May 2010 09:47:06 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody1@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf89a5740c_77a0..fdba4f0dc1c
+
+
+--mimepart_4bdbf89a5740c_77a0..fdba4f0dc1c
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/LlP2mK3slzMFk__y17c- </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf89a5740c_77a0..fdba4f0dc1c--
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'somebody2@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'somebody2') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'f0147c8a159fa91ccf49a40b8f1f497c5899db42d5d275bdca3da76170424a6783995125ce386aed0df4718ced84272b452db5e3c9c61de6edb0ecfbdafb1bb8') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '27f4bf8df95c1883ac7ef289ec8f8c25be9f827f9be754104b9906bf086ee0c925ce2a74a577465e45bfe746d6fef956d130a9217111e4bec0f54a6c3f09f39d') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '27f4bf8df95c1883ac7ef289ec8f8c25be9f827f9be754104b9906bf086ee0c925ce2a74a577465e45bfe746d6fef956d130a9217111e4bec0f54a6c3f09f39d') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES('2010-05-01 09:47:06', '2010-05-01 09:47:06', 'f015d5465e695c4c1ebac7ac1275887dcd0cace926ad465bf3c2c4015a0187899c6069eadd4eb1519a327c80d8c2b5a0346bd9cacdc6c34823bfa179cf2cfd32', '9WzPDxUvAKE_iwkKLndV', '2010-05-01 09:47:06', 'somebody2', 'xRk1vqSJ6psTXVoFSAjv', 'f0147c8a159fa91ccf49a40b8f1f497c5899db42d5d275bdca3da76170424a6783995125ce386aed0df4718ced84272b452db5e3c9c61de6edb0ecfbdafb1bb8', 'somebody2@example.com')[0m
+Sent mail to somebody2@example.com
+
+Date: Sat, 1 May 2010 09:47:06 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: somebody2@example.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf89a602b1_77a0..fdba4f0dc28f
+
+
+--mimepart_4bdbf89a602b1_77a0..fdba4f0dc28f
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/9WzPDxUvAKE_iwkKLndV </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf89a602b1_77a0..fdba4f0dc28f--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'b7d571268da238894447955ef7a65f2cbb2a63a87524da421b86e0618d0e0a99a748715b7a0b73e1216086b4bef3d43c470390be43791f5f5ce79b0ac5ba8d4a') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '1a80b027865a112fa4ea3556bceae7b8c0f85c7df6ae5a6b0e7115b96818d4c7beef139e848a848eaabecbcf68ff98a885cab61c363ffcaceb312bd890686e21') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'f0147c8a159fa91ccf49a40b8f1f497c5899db42d5d275bdca3da76170424a6783995125ce386aed0df4718ced84272b452db5e3c9c61de6edb0ecfbdafb1bb8') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'f0147c8a159fa91ccf49a40b8f1f497c5899db42d5d275bdca3da76170424a6783995125ce386aed0df4718ced84272b452db5e3c9c61de6edb0ecfbdafb1bb8') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`activated_at`, `created_at`, `crypted_password`, `perishable_token`, `updated_at`, `username`, `password_salt`, `persistence_token`, `email`) VALUES(NULL, '2010-05-01 09:47:06', '8fb1e42abe8ebffb86dbf3d60e22786657f0a575ce679f0e2ea73a9970ccc8819fbadcbfe356c483263a16131b8e934d9ddf881a16469c213671ed7691b43b5d', 'AeyC-4wjvYXlF6JdJpaO', '2010-05-01 09:47:06', 'sid', 'tFhCZ45r80qUO3ov-hoD', '1a80b027865a112fa4ea3556bceae7b8c0f85c7df6ae5a6b0e7115b96818d4c7beef139e848a848eaabecbcf68ff98a885cab61c363ffcaceb312bd890686e21', 'sid.ravichandran@gmail.com')[0m
+Sent mail to sid.ravichandran@gmail.com
+
+Date: Sat, 1 May 2010 09:47:06 +0530
+From: WHYLT Registration Confirmation <noreply@WHYLT.com>
+To: sid.ravichandran@gmail.com
+Subject: Account Registration Succesful
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4bdbf89a6953f_77a0..fdba4f0dc316
+
+
+--mimepart_4bdbf89a6953f_77a0..fdba4f0dc316
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head>
+    <title> Welcome to WHYLT | Your online log of problems conquered </ti=
+tle>
+    <link href=3D"/stylesheets/mail.css" media=3D"screen" rel=3D"styleshe=
+et" type=3D"text/css" />
+  </head>
+
+  <body>
+    <div class=3D"mail-header">
+      WHYLT
+    </div>
+    <div class=3D"mail-content">
+      <p> Welcome to WHYLT. Your online log of problems conquered. To act=
+ivate your account on WHYLT.com </p>
+      <p> http://localhost:3000/activate_account/AeyC-4wjvYXlF6JdJpaO </p=
+>
+    </div>
+  </body>
+</html>
+
+--mimepart_4bdbf89a6953f_77a0..fdba4f0dc316--
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid2') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'bb96a30159707312637f577113af91ad4998064638b0198ddc02c7aaa0d5ce3043703876107ba43eaf80e375845d90e1d22d600ff52d4b5815001c3250ef7736') LIMIT 1[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '0f14c5558dd63ec5394c6fddd47af99782064a64b3be822f174ae2dcd25a89910daf5a120dd6966ba0aa5233392a5d26c0ab92ea9e6272d87023d221d2335eba') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '0f14c5558dd63ec5394c6fddd47af99782064a64b3be822f174ae2dcd25a89910daf5a120dd6966ba0aa5233392a5d26c0ab92ea9e6272d87023d221d2335eba') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'sid.ravichandran@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'sid') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '049cd0419447b7ca9fa1ef74e486f37b364119af94e78dc5267ae8b0fddc9ac2dc5a5cfb703c95f3d65e256428570da5ba5e34e6f7e65b6103b48a46727de85c') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+  Parameters: {"token"=>"123456789"}
+Redirected to http://test.host/users/1005
+Completed in 3ms (DB: 17) | 302 Found [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+  Parameters: {"token"=>"123456789"}
+Redirected to http://test.host/users/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate_account (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+  Parameters: {"token"=>"123456789"}
+Rendering template within layouts/application
+Rendering users/activation_link_failure
+Rendered user_sessions/_new (3.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/activate_account/123456789]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/signup_success
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-01 15:17:06) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"maryhadalittlelamb", "username"=>"sid", "id"=>"1", "password"=>"maryhadalittlelamb", "email"=>"sid.ravichandran@gmail.com"}}
+[UsersController][create] ==> 
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=sid.ravichandran%40gmail.com&user%5Bid%5D=1&user%5Bpassword%5D=maryhadalittlelamb&user%5Bpassword_confirmation%5D=maryhadalittlelamb&user%5Busername%5D=sid]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-01 15:17:06) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m

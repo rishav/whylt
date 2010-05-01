@@ -12,7 +12,7 @@
       </div>
       <div class="login-status"> 
         <% if current_user.nil? %>
-          <%= render :partial=>"user_sessions/new", :locals=>{:user_sessions=>UserSession.new} %>
+          <%= render :partial=>"user_sessions/new", :locals=>{:user_session=>UserSession.new} %>
         <% else %>
           <%= "Hi #{current_user.username}" %> | <%= link_to "Logout", logout_url %> 
         <% end %>
