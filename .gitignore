@@ -5,6 +5,7 @@ db/*.sqlite3
 db/sphinx/*
 config/*sphinx*
 config/database.yml
+nbproject/
 nbproject/**/*
 nbproject/project.*
 test

@@ -4,6 +4,31 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
 require 'spec/autorun'
 require 'spec/rails'
+require 'factory_girl'
+
+
+Factory.sequence :email do |n|
+  "somebody#{n}@example.com"
+end
+
+Factory.sequence :username do |n|
+  "somebody#{n}"
+end
+Factory.define :user do |u|
+  u.username              { Factory.next(:username) }
+  u.email                 { Factory.next(:email) }
+  u.password              "password"
+  u.password_confirmation "password"
+  u.activated_at          DateTime.now
+  
+end
+
+
+Factory.define :post do |post|
+  post.title "Factory Pattern"
+  post.body  "Learn about factory pattern"
+  post.user  { |a| a.association(:user) }
+end
 
 # Uncomment the next line to use webrat's matchers
 #require 'webrat/integrations/rspec-rails'
